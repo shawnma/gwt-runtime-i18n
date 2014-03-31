@@ -15,7 +15,7 @@ import com.google.gson.stream.JsonWriter;
 public class I18nResourceWriter {
     private static final String NONE = "NONE";
     // locale => json string mapping.
-    private static Map localizationCache = new HashMap();
+    private static Map<String, String> localizationCache = new HashMap<>();
 
     public String generateJSON(String resource, String localeString) {
         if (localeString == null) {
@@ -76,7 +76,6 @@ public class I18nResourceWriter {
         InputStream is = I18nResourceWriter.class.getResourceAsStream(resource + ".properties");
         if (is == null)
             return null;
-        System.out.println("Found " + resource);
         Properties props = new Properties();
         try {
             props.load(new InputStreamReader(is, "UTF-8"));

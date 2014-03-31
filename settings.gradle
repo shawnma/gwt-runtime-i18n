@@ -17,3 +17,4 @@ include 'services:webservice'
 */
 
 rootProject.name = 'gwt-runtime-i18n'
+include 'dyni18n', 'sample'

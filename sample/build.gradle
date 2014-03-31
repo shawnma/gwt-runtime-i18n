@@ -1,0 +1,58 @@
+
+apply plugin: 'war'
+apply plugin: 'eclipse'
+
+dependencies {
+    project (":dyni18n")
+    providedCompile "com.google.gwt:gwt-dev:${gwtVersion}"
+    providedCompile "com.google.gwt:gwt-user:${gwtVersion}"
+    providedCompile "javax.servlet:servlet-api:2.5"
+    providedCompile "javax.validation:validation-api:1.0.0.GA:sources@jar"
+    providedCompile "javax.validation:validation-api:1.0.0.GA@jar"
+}
+
+task gwtc {
+    inputs.files fileTree(dir: 'src/main/java', includes: ['**/client/**', '**/shared/**', '**/*.gwt.xml'])
+    inputs.files configurations.compile
+    outputs.dir "build/gwt"
+    doFirst {
+        javaexec {
+            main = 'com.google.gwt.dev.Compiler'
+            maxHeapSize = '512M'
+            jvmArgs = ["-Dgwt.persistentunitcache=false"]
+            def threads = Runtime.runtime.availableProcessors()
+            args "-localWorkers $threads -style OBFUSCATED com.innopath.agentportal.AgentPortal -war build/gwt".split()
+            classpath sourceSets.main.java.srcDirs
+            classpath sourceSets.main.resources.srcDirs
+            classpath += configurations.compile + configurations.providedCompile
+        }
+    }
+}
+
+
+war {
+    dependsOn 'gwtc'
+    from 'build/gwt'
+}
+
+eclipse {
+    project {
+        natures 'com.google.gdt.eclipse.core.webAppNature'
+        natures 'com.google.gwt.eclipse.core.gwtNature'
+        buildCommand 'com.google.gdt.eclipse.core.webAppProjectValidator'
+        buildCommand 'com.google.gwt.eclipse.core.gwtProjectValidator'
+        def gdtPref = '''
+eclipse.preferences.version=1
+jarsExcludedFromWebInfLib=
+warSrcDir=src/main/webapp
+warSrcDirIsOutput=true
+'''
+        new File("${projectDir}/.settings").mkdirs()
+        new File("${projectDir}/.settings/com.google.gdt.eclipse.core.prefs").write(gdtPref)
+    }
+    classpath {
+        defaultOutputDir = new File("${project.projectDir}/src/main/webapp/WEB-INF/classes")
+        containers 'com.google.gwt.eclipse.core.GWT_CONTAINER'
+    }
+}
+

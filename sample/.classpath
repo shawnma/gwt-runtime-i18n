@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-dev/2.6.0/jar/af3d9ad2fb8be30dc87fdcd6d9a373b2ab675802/gwt-dev-2.6.0.jar" sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-dev/2.6.0/source/9a0b6a1b42a66d6013edf8ed03c05cb196f16fb4/gwt-dev-2.6.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-user/2.6.0/jar/8237d1bd37127188107388c8724be44a0e9f73ca/gwt-user-2.6.0.jar" sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-user/2.6.0/source/7a59cc91e16f255d22b692dcc5839d3eb1d606c6/gwt-user-2.6.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.servlet/servlet-api/2.5/jar/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.servlet/servlet-api/2.5/source/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.0.0.GA/jar/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.0.0.GA/source/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.0.0.GA/jar/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/org.json/json/20090211/jar/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dyni18n"/>
+	<classpathentry kind="output" path="src/main/webapp/WEB-INF/classes"/>
+</classpath>

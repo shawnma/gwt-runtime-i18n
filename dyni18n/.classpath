@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.code.gson/gson/2.2.1/source/e0ce57d7886a590ce0add6fed4651181e97fc905/gson-2.2.1-sources.jar" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.code.gson/gson/2.2.1/jar/d8e711ae108185c59c17b36b3c3f11b20cf9b4d5/gson-2.2.1.jar" exported="true"/>
+	<classpathentry sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-dev/2.6.0/source/9a0b6a1b42a66d6013edf8ed03c05cb196f16fb4/gwt-dev-2.6.0-sources.jar" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-dev/2.6.0/jar/af3d9ad2fb8be30dc87fdcd6d9a373b2ab675802/gwt-dev-2.6.0.jar" exported="true"/>
+	<classpathentry sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-user/2.6.0/source/7a59cc91e16f255d22b692dcc5839d3eb1d606c6/gwt-user-2.6.0-sources.jar" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/com.google.gwt/gwt-user/2.6.0/jar/8237d1bd37127188107388c8724be44a0e9f73ca/gwt-user-2.6.0.jar" exported="true"/>
+	<classpathentry kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/org.json/json/20090211/jar/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" exported="true"/>
+	<classpathentry kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.0.0.GA/jar/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" exported="true"/>
+	<classpathentry sourcepath="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.0.0.GA/source/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" kind="lib" path="/Users/sma/.gradle/caches/artifacts-26/filestore/javax.validation/validation-api/1.0.0.GA/jar/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" exported="true"/>
+</classpath>
